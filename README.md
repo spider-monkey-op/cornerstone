@@ -1,1 +1,1 @@
-This code is protected by copyright law. Unauthorized use or distribing is prohibited. I have not given or granted the rights of my code to anyone to use or modify the code without my consent.
+This code is protected by copyright law. Unauthorized use or distribing is prohibited. I have not given or granted the rights of my code to anyone to use or modify the code without my consent. This code is for Cornerstone Church, and the staff, located in Austin Minnesota only.
