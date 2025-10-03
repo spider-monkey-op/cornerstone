@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-color:  #00AEEF;
+}
+.blue {
+    background-color: var(--primary-color);
+}
+.white {
+    background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    background-color: rgb(23, 24, 26);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+li {
+    list-style: none;
+}
+a {
+    transition: all 100ms ease-in-out;
+}
+a:hover {
+    opacity: .8;
+}
+ul {
+    padding: 0px;
+}
+.button-wrapper {
+    position: absolute;
+    bottom: 20vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 3.0vw;
+    padding-right: 3.0vw;
+}
+.button-wrapper button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 24px;
+    cursor: pointer;
+}
+#home-nav {
+    position:absolute;
+}
+nav.navbar div.container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link img {
+    width: 2rem;
+}
+.right-nav {
+    display: flex;
+}
+.navbar-collapse ul li  {
+    background-color: rgba(23, 24, 26, 0.5);
+}
+span.navbar-toggler-icon {
+    color: white;
+    opacity: 1;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-brand img {
+    width: 2rem;
+}
+.nav-link {
+    color: white;
+}
+.navbar-nav:not(:first-child) {
+    display: flex;
+    justify-content: end;
+}
+.hero-image {
+    background-image: url('graphics/hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    width: 100%;
+    margin-bottom: 2rem;
+    top: 0;
+    left: 0;
+}
+.schedule h1 {
+    font-size : 2.0rem;
+    font-weight: 700;
+}
+.schedule {
+    background-color: var(--primary-color);
+}
+.app-links {
+    display:flex;
+    justify-content: space-between;
+}
+.app {
+    color: black;
+    background-color: white;
+}
+.app img {
+    width: 45%;
+}
+.app-phone img {
+    width: 85%;
+}
+.app-phone {
+    display: flex;
+    justify-content: start;
+    transform: translate(-12px, 0px);
+}
+.container-footing p{
+    border-bottom: rgb(54, 54, 63) 2px solid;
+}
+.container-footing img {
+    width: 24px;
+    color: white;
+}
+.video {
+    border: 1px solid white;
+}
+.accordion-button {
+    background-color: var(--primary-color);
+    color: white;
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: white;
+}
+#accordion-body-last {
+    border-bottom: solid 2px rgb(219, 219, 219);
+}
+button.accordion-button {
+    font-size: 1.5rem;
+}
+.accordion-button:focus {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.accordion-body {
+    font-size: 1rem;
+}
+div p {
+    font-size: 1rem;
+}
+.text p{
+    font-size: 1.2rem;
+}
+@media (max-width: 767.98px) {
+    .nav-collapse {
+        display: none;
+    }
+}
+@media screen and (min-width: 320px) {
+    #combined-button {
+        display: none;
+    }
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .right-nav li {
+        padding: 12px;
+
+    }
+    .right-nav {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .app {
+        display: flex;
+        flex-direction: row;
+    }
+    .app-heading {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex: 1;
+    }
+    .app-phone {
+        flex: 1;
+    }
+    .app-phone img {
+        padding-left: 48px;
+    }
+    .app-links {
+        padding-bottom: 3rem;
+    }
+    .app-text {
+        padding-top: 5vh;
+    }
+    .schedule p:last-child {
+        padding-bottom: 10vh;
+    }
+    h1.text-uppercase {
+        font-size: 4rem;
+        padding-top: 10vh;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+    .app-text {
+        padding-top: 9vh;
+
+    }
+    .footer {
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+    .app-text h2 {
+        font-size: 2rem;
+    }
+    .app-text p {
+        font-size: 1.2rem;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .app-text h2 {
+        font-size: 3rem;
+    }
+    .app-text p {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
